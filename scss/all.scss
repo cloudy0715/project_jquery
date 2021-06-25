@@ -1,0 +1,333 @@
+@import "reset";
+.wrap {
+    width: 1028px;
+    margin: 0 auto;
+    font-family: 微軟正黑體;
+}
+
+.community {
+    background: #eeeeee;
+    height: 40px;
+}
+
+.community_item {
+    display: flex;
+    float: right;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    li {
+        width: 100px;
+        text-align: right;
+        font-weight: bold;
+        a {
+            display: block;
+            padding-right: 8px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            text-decoration: none;
+        }
+    }
+}
+
+.fb {
+    a {
+        color: #4460a0;
+        border-right: 2px solid rgb(204, 202, 202);
+    }
+    img {
+        margin-right: 3px;
+        align-items: center;
+    }
+}
+
+.twitter {
+    a {
+        color: #00aaec;
+    }
+    img {
+        margin-right: 3px;
+        align-items: center;
+    }
+}
+
+.header {
+    height: 60px;
+    h1 {
+        float: left;
+        a {
+            background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
+            width: 200px;
+            height: 50px;
+            margin-top: 5px;
+            display: block;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+}
+
+// .logo {
+//     float: left;
+//     a {
+//         background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
+//         width: 200px;
+//         height: 50px;
+//         margin-top: 5px;
+//         display: block;
+//         text-indent: 101%;
+//         overflow: hidden;
+//         white-space: nowrap;
+//     }
+// }
+.menu {
+    width: 828px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    position: relative;
+    li {
+        text-align: center;
+        font-weight: bold;
+        a {
+            display: block;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 18px;
+            color: rgb(19, 223, 179);
+            text-decoration: none;
+            transition: all .3s;
+        }
+        a:hover {
+            border-bottom: 3px solid rgb(19, 223, 179);
+        }
+    }
+    a.active {
+        background: rgb(19, 223, 179);
+        color: #fff;
+        border-bottom: 3px solid rgb(19, 223, 179);
+    }
+    >li {
+        float: left;
+    }
+    ul {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        li {
+            background: rgba(0, 0, 0, 0.555);
+            padding: 0px 10px;
+            a {
+                color: rgba(255, 255, 255, 0.815);
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.banner {
+    height: 346px;
+    background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bannerText {
+    width: 982px;
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+    font-size: 32px;
+    padding: 40px 65px;
+    line-height: 1.5;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 10px;
+}
+
+.content-item {
+    width: 300px;
+    padding: 10px;
+    border: rgba(255, 255, 255, 0.938) solid 1px;
+    box-shadow: 0px 3px 3px rgba(128, 128, 128, 0.5);
+    h2 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    p {
+        padding: 15px 10px 15px 14px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        color: rgb(121, 121, 121);
+    }
+    ul {
+        list-style-type: disc;
+        padding-left: 40px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        color: rgb(121, 121, 121);
+    }
+}
+
+.content-item-img {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    h2 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .courseTable {
+        margin-top: 25px;
+        width: 100%;
+        th,
+        td {
+            border-bottom: 1px solid #d8d3d3;
+            border-top: 1px solid #d8d3d3;
+            padding: 10px 30px;
+            text-align: left;
+            font-weight: bold;
+        }
+        th {
+            background: #eeededd3;
+        }
+        .green {
+            color: #0cca9b;
+        }
+    }
+}
+
+.info {
+    background: linear-gradient(#02684e, #05b489);
+    padding-bottom: 30px;
+    h2 {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.856);
+        line-height: 1.5;
+        letter-spacing: 2px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    form {
+        display: flex;
+    }
+    .halfLeft {
+        padding-left: 23px;
+        padding-right: 20px;
+    }
+    .halfRight {
+        padding-left: 23px;
+        padding-right: 20px;
+        input {
+            width: 470px;
+            margin-bottom: 15px;
+            padding: 10px 10px;
+            border-radius: 3px;
+            border: 0;
+            font-size: 13px;
+        }
+        label {
+            margin-bottom: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .btn {
+            border: 0px;
+            border-radius: 10px;
+            width: 80px;
+            padding: 10px;
+            color: white;
+            background-color: #00cc99;
+            font-weight: bold;
+            float: right;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #ffffffbe;
+            color: #049e77;
+            cursor: pointer;
+        }
+    }
+    label,
+    input {
+        display: block;
+    }
+    textarea {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    .bottomInfo {
+        margin-top: 2px;
+        li {
+            padding: 5px 10px;
+            font-size: 15px;
+            color: rgb(90, 88, 88);
+            letter-spacing: 1px;
+            font-weight: bold;
+            a {
+                text-decoration: none;
+                color: rgb(243, 106, 213);
+            }
+        }
+    }
+    h2 {
+        a {
+            background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png");
+            width: 172px;
+            height: 36px;
+            margin: 10px 20px;
+            display: block;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+}
+
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+}
+
+.go-to-top {
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.go-to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
